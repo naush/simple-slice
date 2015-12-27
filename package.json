@@ -1,8 +1,12 @@
 {
   "name": "simple-slice",
   "version": "1.1.0",
-  "description": "",
+  "description": "A simple component of a slice created in ReactJS and SVG.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naush/simple-slice.git"
+  },
   "dependencies": {
     "react": "^0.13.3",
     "simple-modular-scale": "^1.0.2"
@@ -17,5 +21,14 @@
     "prepublish": "npm run compile"
   },
   "author": "Li-Hsuan Lung",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "simple",
+    "simple-slice",
+    "slice",
+    "svg",
+    "trigonometry",
+    "visualization"
+  ]
 }
