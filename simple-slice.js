@@ -21,13 +21,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var SimpleSlice = (function (_React$Component) {
   _inherits(SimpleSlice, _React$Component);
 
-  function SimpleSlice(props) {
+  function SimpleSlice() {
     _classCallCheck(this, SimpleSlice);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(SimpleSlice).call(this, props));
-
-    _this.state = { opacity: props.opacity };
-    return _this;
+    return _possibleConstructorReturn(this, Object.getPrototypeOf(SimpleSlice).apply(this, arguments));
   }
 
   _createClass(SimpleSlice, [{
@@ -44,8 +41,10 @@ var SimpleSlice = (function (_React$Component) {
       var start = _props.start;
       var end = _props.end;
       var color = _props.color;
+      var opacity = _props.opacity;
       var strokeWidth = _props.strokeWidth;
       var strokeColor = _props.strokeColor;
+      var strokeOpacity = _props.strokeOpacity;
       var mouseEnter = _props.mouseEnter;
       var mouseLeave = _props.mouseLeave;
 
@@ -58,13 +57,13 @@ var SimpleSlice = (function (_React$Component) {
         graph: {
           fill: color,
           stroke: strokeColor,
-          opacity: this.state.opacity
+          opacity: opacity
         },
         stroke: {
           strokeWidth: strokeWidth,
           strokeLinecap: 'round',
           strokeLinejoin: 'round',
-          strokeOpacity: this.state.opacity
+          strokeOpacity: strokeOpacity
         }
       };
       var props = {
@@ -95,17 +94,20 @@ SimpleSlice.propTypes = {
   start: _react2.default.PropTypes.number,
   end: _react2.default.PropTypes.number,
   color: _react2.default.PropTypes.string,
+  opacity: _react2.default.PropTypes.number,
   strokeWidth: _react2.default.PropTypes.number,
   strokeColor: _react2.default.PropTypes.string,
-  opacity: _react2.default.PropTypes.number,
+  strokeOpacity: _react2.default.PropTypes.number,
   mouseEnter: _react2.default.PropTypes.func,
   mouseLeave: _react2.default.PropTypes.func
 };
 
 SimpleSlice.defaultProps = {
   color: 'white',
+  opacity: 1.0,
   strokeWidth: 1.0,
-  strokeColor: 'black'
+  strokeColor: 'black',
+  strokeOpacity: 1.0
 };
 
 exports.default = SimpleSlice;

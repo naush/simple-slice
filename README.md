@@ -32,11 +32,11 @@ end: React.PropTypes.number // The ending angle of a slice in degrees.
 ```
 
 ```javascript
-opacity: React.Proptypes.number // The opacity of the slice.
+color: React.Proptypes.string // The color of the slice. Default: white
 ```
 
 ```javascript
-color: React.Proptypes.string // The color of the slice. Default: white
+opacity: React.Proptypes.number // The opacity of the slice. Default: 1.0
 ```
 
 ```javascript
@@ -45,6 +45,10 @@ strokeWidth: React.Proptypes.string // The width of the stroke. Default: 1.0
 
 ```javascript
 strokeColor: React.Proptypes.string // The color of the stroke. Default: black
+```
+
+```javascript
+strokeOpacity: React.Proptypes.string // The opacity of the stroke. Default: 1.0
 ```
 
 ```javascript

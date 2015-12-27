@@ -1,11 +1,6 @@
 import React from 'react'
 
 class SimpleSlice extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { opacity: props.opacity }
-  }
-
   toRadian (degrees) {
     return Math.PI * degrees / 180
   }
@@ -17,8 +12,10 @@ class SimpleSlice extends React.Component {
       start,
       end,
       color,
+      opacity,
       strokeWidth,
       strokeColor,
+      strokeOpacity,
       mouseEnter,
       mouseLeave
     } = this.props
@@ -37,13 +34,13 @@ class SimpleSlice extends React.Component {
       graph: {
         fill: color,
         stroke: strokeColor,
-        opacity: this.state.opacity
+        opacity: opacity
       },
       stroke: {
         strokeWidth: strokeWidth,
         strokeLinecap: 'round',
         strokeLinejoin: 'round',
-        strokeOpacity: this.state.opacity
+        strokeOpacity: strokeOpacity
       }
     }
     let props = {
@@ -71,17 +68,20 @@ SimpleSlice.propTypes = {
   start: React.PropTypes.number,
   end: React.PropTypes.number,
   color: React.PropTypes.string,
+  opacity: React.PropTypes.number,
   strokeWidth: React.PropTypes.number,
   strokeColor: React.PropTypes.string,
-  opacity: React.PropTypes.number,
+  strokeOpacity: React.PropTypes.number,
   mouseEnter: React.PropTypes.func,
   mouseLeave: React.PropTypes.func
 }
 
 SimpleSlice.defaultProps = {
   color: 'white',
+  opacity: 1.0,
   strokeWidth: 1.0,
-  strokeColor: 'black'
+  strokeColor: 'black',
+  strokeOpacity: 1.0
 }
 
 export default SimpleSlice
