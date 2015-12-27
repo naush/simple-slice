@@ -3,6 +3,8 @@ module.exports = {
 
   output: {
     filename: 'simple-slice.js',
+    library: 'simplie-slice',
+    libraryTarget: 'umd',
     path: __dirname
   },
 
