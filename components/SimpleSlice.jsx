@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Slice extends React.Component {
+class SimpleSlice extends React.Component {
   constructor(props) {
     super(props)
     this.state = { opacity: props.opacity }
@@ -48,7 +48,7 @@ class Slice extends React.Component {
   }
 }
 
-Slice.propTypes = {
+SimpleSlice.propTypes = {
   center: React.PropTypes.number,
   radius: React.PropTypes.number,
   start: React.PropTypes.number,
@@ -59,4 +59,4 @@ Slice.propTypes = {
   mouseLeave: React.PropTypes.func
 }
 
-export default Slice
+export default SimpleSlice

@@ -1,4 +1,4 @@
-# Slice
+# Simple Slice
 A simple component of a slice created in ReactJS and SVG.
 
 # Example
@@ -14,7 +14,7 @@ Go to [http://localhost:8080](http://localhost:8080) on your browser to view the
 
 # Usage
 ```javascript
-<Slice
+<SimpleSlice
   center={64}
   radius={32}
   start={0}
