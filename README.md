@@ -20,7 +20,7 @@ And go to [http://localhost:8080](http://localhost:8080) on your browser to view
   start={0}
   end={30}
   opacity={1.0}
-  color={blue}
+  color='blue'
 />
 ```
 
