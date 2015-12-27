@@ -36,12 +36,19 @@ class SimpleSlice extends React.Component {
         strokeOpacity: this.state.opacity
       }
     }
+    let props = {
+      transform: transformation,
+      style: styles.graph
+    }
+    if(onMouseEnter) {
+      props.onMouseEnter = onMouseEnter.bind(this)
+    }
+    if(onMouseLeave) {
+      props.onMouseLeave = onMouseLeave.bind(this)
+    }
 
     return (
-      <g transform={ transformation }
-        style={ styles.graph }
-        onMouseEnter={ mouseEnter.bind(this) }
-        onMouseLeave={ mouseLeave.bind(this) }>
+      <g {...props}>
         <path d={ description } style={ styles.stroke } />
       </g>
     )

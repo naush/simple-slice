@@ -65,13 +65,20 @@ var SimpleSlice = (function (_React$Component) {
           strokeOpacity: this.state.opacity
         }
       };
+      var props = {
+        transform: transformation,
+        style: styles.graph
+      };
+      if (onMouseEnter) {
+        props.onMouseEnter = onMouseEnter.bind(this);
+      }
+      if (onMouseLeave) {
+        props.onMouseLeave = onMouseLeave.bind(this);
+      }
 
       return _react2.default.createElement(
         'g',
-        { transform: transformation,
-          style: styles.graph,
-          onMouseEnter: mouseEnter.bind(this),
-          onMouseLeave: mouseLeave.bind(this) },
+        props,
         _react2.default.createElement('path', { d: description, style: styles.stroke })
       );
     }
