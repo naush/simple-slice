@@ -1,8 +1,8 @@
 module.exports = {
-  entry: './entry.js',
+  entry: './src/SimpleSlice.jsx',
 
   output: {
-    filename: 'index.js',
+    filename: 'simple-slice.js',
     path: __dirname
   },
 
