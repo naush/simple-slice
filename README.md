@@ -1,5 +1,5 @@
 # Slice
-A basic component of a slice of a pie created in ReactJS and SVG.
+A basic component of a slice of pie created in ReactJS and SVG.
 
 # Usage
 ```javascript
