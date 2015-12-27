@@ -3,7 +3,7 @@ import React from 'react'
 class Slice extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { opacity: 0.6 }
+    this.state = { opacity: props.opacity }
   }
 
   toRadian (degrees) {
@@ -54,6 +54,7 @@ Slice.propTypes = {
   start: React.PropTypes.number,
   end: React.PropTypes.number,
   color: React.PropTypes.string,
+  opacity: React.PropTypes.number,
   mouseEnter: React.PropTypes.func,
   mouseLeave: React.PropTypes.func
 }

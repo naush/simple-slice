@@ -39,6 +39,12 @@ end: React.PropTypes.number
 The ending angle of a slice in degrees.
 
 ```javascript
+opacity: React.Proptypes.number
+```
+
+The opacity of the slice.
+
+```javascript
 color: React.Proptypes.string
 ```
 

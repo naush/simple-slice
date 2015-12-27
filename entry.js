@@ -1,5 +1,4 @@
 import React from 'react'
-import App from './components/App.jsx'
-import data from './data'
+import ColorWheel from './examples/ColorWheel.jsx'
 
-React.render(<App {...data} />, document.querySelector('#app'))
+React.render(<ColorWheel title='ColorWheel' />, document.querySelector('#color-wheel'))
