@@ -6,20 +6,12 @@ class Slice extends React.Component {
     this.state = { opacity: 0.6 }
   }
 
-  mouseEnter () {
-    this.setState({ opacity: 1.0 })
-  }
-
-  mouseLeave () {
-    this.setState({ opacity: 0.6 })
-  }
-
   toRadian (degrees) {
     return Math.PI * degrees / 180
   }
 
   render () {
-    let { center, radius, start, end, color } = this.props
+    let { center, radius, start, end, color, mouseEnter, mouseLeave } = this.props
 
     let radians = this.toRadian(end - start - 90)
     let destX = center + radius * Math.cos(radians)
@@ -48,8 +40,8 @@ class Slice extends React.Component {
     return (
       <g transform={ transformation }
         style={ styles.graph }
-        onMouseEnter={ this.mouseEnter.bind(this) }
-        onMouseLeave={ this.mouseLeave.bind(this) }>
+        onMouseEnter={ mouseEnter.bind(this) }
+        onMouseLeave={ mouseLeave.bind(this) }>
         <path d={ description } style={ styles.stroke } />
       </g>
     )
@@ -61,7 +53,9 @@ Slice.propTypes = {
   radius: React.PropTypes.number,
   start: React.PropTypes.number,
   end: React.PropTypes.number,
-  color: React.PropTypes.string
+  color: React.PropTypes.string,
+  mouseEnter: React.PropTypes.func,
+  mouseLeave: React.PropTypes.func
 }
 
 export default Slice
