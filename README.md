@@ -10,7 +10,7 @@ npm install
 npm start
 ```
 
-And go to [http://localhost:8080](http://localhost:8080) on your browser to view the color wheel example.
+Go to [http://localhost:8080](http://localhost:8080) on your browser to view the color wheel example.
 
 # Usage
 ```javascript
