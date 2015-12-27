@@ -69,11 +69,11 @@ var SimpleSlice = (function (_React$Component) {
         transform: transformation,
         style: styles.graph
       };
-      if (onMouseEnter) {
-        props.onMouseEnter = onMouseEnter.bind(this);
+      if (mouseEnter) {
+        props.onMouseEnter = mouseEnter.bind(this);
       }
-      if (onMouseLeave) {
-        props.onMouseLeave = onMouseLeave.bind(this);
+      if (mouseLeave) {
+        props.onMouseLeave = mouseLeave.bind(this);
       }
 
       return _react2.default.createElement(
