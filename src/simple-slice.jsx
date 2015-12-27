@@ -45,13 +45,9 @@ class SimpleSlice extends React.Component {
     }
     let props = {
       transform: transformation,
-      style: styles.graph
-    }
-    if(mouseEnter) {
-      props.onMouseEnter = mouseEnter.bind(this)
-    }
-    if(mouseLeave) {
-      props.onMouseLeave = mouseLeave.bind(this)
+      style: styles.graph,
+      onMouseEnter: mouseEnter,
+      onMouseLeave: mouseLeave
     }
 
     return (
