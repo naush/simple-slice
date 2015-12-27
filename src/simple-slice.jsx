@@ -11,7 +11,17 @@ class SimpleSlice extends React.Component {
   }
 
   render () {
-    let { center, radius, start, end, color, mouseEnter, mouseLeave } = this.props
+    let {
+      center,
+      radius,
+      start,
+      end,
+      color,
+      strokeWidth,
+      strokeColor,
+      mouseEnter,
+      mouseLeave
+    } = this.props
 
     let radians = this.toRadian(end - start - 90)
     let destX = center + radius * Math.cos(radians)
@@ -26,11 +36,11 @@ class SimpleSlice extends React.Component {
     let styles = {
       graph: {
         fill: color,
-        stroke: color,
+        stroke: strokeColor,
         opacity: this.state.opacity
       },
       stroke: {
-        strokeWidth: 0.0,
+        strokeWidth: strokeWidth,
         strokeLinecap: 'round',
         strokeLinejoin: 'round',
         strokeOpacity: this.state.opacity
@@ -61,9 +71,17 @@ SimpleSlice.propTypes = {
   start: React.PropTypes.number,
   end: React.PropTypes.number,
   color: React.PropTypes.string,
+  strokeWidth: React.PropTypes.number,
+  strokeColor: React.PropTypes.string,
   opacity: React.PropTypes.number,
   mouseEnter: React.PropTypes.func,
   mouseLeave: React.PropTypes.func
+}
+
+SimpleSlice.defaultPropts = {
+  color: 'white',
+  strokeWidth: 1.0,
+  strokeColor: 'black'
 }
 
 export default SimpleSlice

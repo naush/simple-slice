@@ -36,7 +36,15 @@ opacity: React.Proptypes.number // The opacity of the slice.
 ```
 
 ```javascript
-color: React.Proptypes.string // The color of the slice.
+color: React.Proptypes.string // The color of the slice. Default: white
+```
+
+```javascript
+strokeWidth: React.Proptypes.string // The width of the stroke. Default: 1.0
+```
+
+```javascript
+strokeColor: React.Proptypes.string // The color of the stroke. Default: black
 ```
 
 ```javascript
