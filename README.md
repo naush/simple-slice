@@ -27,49 +27,33 @@ And go to [http://localhost:8080](http://localhost:8080) on your browser to view
 # Properties
 
 ```javascript
-center: React.PropTypes.number
+center: React.PropTypes.number // The distance from upper left corner of your screen in x- or y- direction.
 ```
-
-The center of the pie.
 
 ```javascript
-radius: React.PropTypes.number
+radius: React.PropTypes.number // The distance from the center to the edge of your slice.
 ```
-
-The length of the slice from the center of the pie.
 
 ```javascript
-start: React.PropTypes.number
+start: React.PropTypes.number // The starting angle of a slice in degrees.
 ```
-
-The starting angle of a slice in degrees.
 
 ```javascript
-end: React.PropTypes.number
+end: React.PropTypes.number // The ending angle of a slice in degrees.
 ```
-
-The ending angle of a slice in degrees.
 
 ```javascript
-opacity: React.Proptypes.number
+opacity: React.Proptypes.number // The opacity of the slice.
 ```
-
-The opacity of the slice.
 
 ```javascript
-color: React.Proptypes.string
+color: React.Proptypes.string // The color of the slice.
 ```
-
-The color of the slice.
 
 ```javascript
-mouseEnter: React.PropTypes.func
+mouseEnter: React.PropTypes.func // A callback function to execute when the mouseenter is fired on slice.
 ```
-
-A callback function to execute when the ```mouseenter``` is fired on slice.
 
 ```javascript
-mouseLeave: React.PropTypes.func
+mouseLeave: React.PropTypes.func // A callback function to execute when the mouseleave is fired on slice.
 ```
-
-A callback function to execute when the ```mouseleave``` is fired on slice.
