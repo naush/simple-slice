@@ -44,6 +44,8 @@ var SimpleSlice = (function (_React$Component) {
       var start = _props.start;
       var end = _props.end;
       var color = _props.color;
+      var strokeWidth = _props.strokeWidth;
+      var strokeColor = _props.strokeColor;
       var mouseEnter = _props.mouseEnter;
       var mouseLeave = _props.mouseLeave;
 
@@ -55,11 +57,11 @@ var SimpleSlice = (function (_React$Component) {
       var styles = {
         graph: {
           fill: color,
-          stroke: color,
+          stroke: strokeColor,
           opacity: this.state.opacity
         },
         stroke: {
-          strokeWidth: 0.0,
+          strokeWidth: strokeWidth,
           strokeLinecap: 'round',
           strokeLinejoin: 'round',
           strokeOpacity: this.state.opacity
@@ -93,9 +95,17 @@ SimpleSlice.propTypes = {
   start: _react2.default.PropTypes.number,
   end: _react2.default.PropTypes.number,
   color: _react2.default.PropTypes.string,
+  strokeWidth: _react2.default.PropTypes.number,
+  strokeColor: _react2.default.PropTypes.string,
   opacity: _react2.default.PropTypes.number,
   mouseEnter: _react2.default.PropTypes.func,
   mouseLeave: _react2.default.PropTypes.func
+};
+
+SimpleSlice.defaultProps = {
+  color: 'white',
+  strokeWidth: 1.0,
+  strokeColor: 'black'
 };
 
 exports.default = SimpleSlice;

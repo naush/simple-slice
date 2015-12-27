@@ -78,7 +78,7 @@ SimpleSlice.propTypes = {
   mouseLeave: React.PropTypes.func
 }
 
-SimpleSlice.defaultPropts = {
+SimpleSlice.defaultProps = {
   color: 'white',
   strokeWidth: 1.0,
   strokeColor: 'black'
