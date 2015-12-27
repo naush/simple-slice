@@ -30,7 +30,6 @@ class ColorWheel extends React.Component {
       }
     }
 
-    let viewBox = '0 0 128 128'
     let props = {
       center: 64,
       radius: 32,
@@ -44,7 +43,7 @@ class ColorWheel extends React.Component {
         <div style={styles.center}>
           <div style={styles.pie}>
             <div>
-              <svg viewBox={viewBox} style={styles.view}>
+              <svg viewBox='0 0 128 128' style={styles.view}>
                 <Slice {...props} start={0} end={45} color='red' />
                 <Slice {...props} start={45} end={90} color='orange' />
                 <Slice {...props} start={90} end={135} color='yellow' />
