@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './src/SimpleSlice.jsx',
+  entry: './entry.js',
 
   output: {
     filename: 'simple-slice.js',
@@ -8,7 +8,14 @@ module.exports = {
 
   module: {
     loaders: [
-      { test: /(\.js$|\.jsx?$)/, exclude: /node_modules/, loader: 'babel-loader' }
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'babel',
+        query: {
+          presets: ['react', 'es2015']
+        }
+      }
     ]
   }
 }

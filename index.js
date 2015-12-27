@@ -1,1 +1,1 @@
-export default from require('./simple-slice.js');
+module.exports = require('./simple-slice');
