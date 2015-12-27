@@ -8,6 +8,7 @@ A simple component of a slice created in ReactJS and SVG.
   radius={32}
   start={0}
   end={30}
+  opacity={1.0}
   color={blue}
 />
 ```
