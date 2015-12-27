@@ -17,7 +17,7 @@
     "babel-preset-react": "^6.3.13"
   },
   "scripts": {
-    "compile": "babel src/simple-slice.jsx > simple-slice.js",
+    "compile": "babel src/simple-slice.jsx > dist/simple-slice.js",
     "prepublish": "npm run compile"
   },
   "author": "Li-Hsuan Lung",

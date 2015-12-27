@@ -1,1 +1,1 @@
-module.exports = require('./simple-slice');
+module.exports = require('./dist/simple-slice');

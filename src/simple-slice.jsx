@@ -59,10 +59,10 @@ class SimpleSlice extends React.Component {
 }
 
 SimpleSlice.propTypes = {
-  center: React.PropTypes.number,
-  radius: React.PropTypes.number,
-  start: React.PropTypes.number,
-  end: React.PropTypes.number,
+  center: React.PropTypes.number.isRequired,
+  radius: React.PropTypes.number.isRequired,
+  start: React.PropTypes.number.isRequired,
+  end: React.PropTypes.number.isRequired,
   color: React.PropTypes.string,
   opacity: React.PropTypes.number,
   strokeWidth: React.PropTypes.number,

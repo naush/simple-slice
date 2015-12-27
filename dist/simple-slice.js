@@ -85,10 +85,10 @@ var SimpleSlice = (function (_React$Component) {
 })(_react2.default.Component);
 
 SimpleSlice.propTypes = {
-  center: _react2.default.PropTypes.number,
-  radius: _react2.default.PropTypes.number,
-  start: _react2.default.PropTypes.number,
-  end: _react2.default.PropTypes.number,
+  center: _react2.default.PropTypes.number.isRequired,
+  radius: _react2.default.PropTypes.number.isRequired,
+  start: _react2.default.PropTypes.number.isRequired,
+  end: _react2.default.PropTypes.number.isRequired,
   color: _react2.default.PropTypes.string,
   opacity: _react2.default.PropTypes.number,
   strokeWidth: _react2.default.PropTypes.number,
