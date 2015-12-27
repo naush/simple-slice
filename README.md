@@ -1,6 +1,17 @@
 # Slice
 A simple component of a slice created in ReactJS and SVG.
 
+# Example
+
+Run the following from command line.
+
+```
+npm install
+npm start
+```
+
+And go to [http://localhost:8080](http://localhost:8080) on your browser to view the color wheel example.
+
 # Usage
 ```javascript
 <Slice
